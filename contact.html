@@ -6,33 +6,36 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
-        <!--For Header-->
-        <header>Sharon Chien</header>
-
-        <!--For Navigation Bar-->
-        <section>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-        <hr>
+         <!--For Header-->
+         <header>
+                <section class="header">
+                <h1><span id="logo">Sharon Chien</span></h1>
+                <nav>
+                    <a class="menu" href="index.html">About</a>
+                    <a class="menu" href="portfolio.html">Portfolio</a>
+                    <a class="menu" href="contact.html">Contact</a>
+                </nav>
+                </section>    
+            </header>
 
         <!--For contact form-->
-        <section>
-            <h1>Contact</h1>
+        <section class="content">
+            <h1 class="heading">Contact</h1>
+            <hr><br>
             <form>
                 Name<br>
                 <input type="text" name="name"><br>
                 Email<br>
                 <input type="text" name="email"><br>
                 Message<br>
-                <input type="text" name="message"><br><br>
+                <textarea id="message" type="text" name="message"></textarea><br>
                 <input type="submit" value="Sumbit">
             </form>
         </section>
+
+        <!--Footer-->
+        <footer>
+            Copyright &copy;
+        </footer>        
     </body>
 </html>
