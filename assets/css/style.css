@@ -98,13 +98,26 @@ footer {
 }
 
 /* styles affecting portfolio.html */
+.projects {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+}
+
+.port-img {
+    width: 300px;
+    height: 200px;
+}
 .port-title {
     color: #ffffff;
     background: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
 }
-
 
 /* styles affecting contact.hmtl */
 input[type=text] {
@@ -129,4 +142,3 @@ input[type=submit] {
     background: #4aaaa5;
     border: none;
 }
-
