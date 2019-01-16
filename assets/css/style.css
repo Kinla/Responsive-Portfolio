@@ -121,6 +121,7 @@ footer {
 
 /* styles affecting contact.hmtl */
 input[type=text] {
+    color: #666666;
     width: 897px;
     margin: 8px 0px 16px 0px;
     padding: 5px;
@@ -128,12 +129,17 @@ input[type=text] {
 }
 
 textarea {
+    color: #666666;
     height: 250px;
     width: 897px;
     margin: 8px 0px 16px 0px;
     padding: 5px;
     border: solid 0.5px #cccccc;
     overflow: auto;
+}
+
+textarea:focus, input[type=text]:focus {
+    outline-color: #4aaaa5;
 }
 
 input[type=submit] {
