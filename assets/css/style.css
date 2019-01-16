@@ -3,6 +3,7 @@ body {
     background-image: url("../images/upfeathers.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
+    font-size: 16px;
 }
 
 header {
@@ -121,7 +122,9 @@ footer {
 
 /* styles affecting contact.hmtl */
 input[type=text] {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #666666;
+    font-size: 16px;
     width: 897px;
     margin: 8px 0px 16px 0px;
     padding: 5px;
@@ -129,7 +132,9 @@ input[type=text] {
 }
 
 textarea {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #666666;
+    font-size: 16px;
     height: 250px;
     width: 897px;
     margin: 8px 0px 16px 0px;
@@ -142,9 +147,12 @@ textarea:focus, input[type=text]:focus {
     outline-color: #4aaaa5;
 }
 
-input[type=submit] {
+input[type=submit], input[value=submit] {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
     padding: 8px 25px 8px 25px;
     color: white;
     background: #4aaaa5;
     border: none;
 }
+
