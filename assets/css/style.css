@@ -1,9 +1,15 @@
 /* styles that affects all pages */
+html {
+    position: relative; /*this was necessary for the footer solution but i don't really understand how it works. what is the html relative to? */
+    min-height: 100%;
+}
+
 body {
     background-image: url("../images/upfeathers.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     font-size: 16px;
+    margin: 0 0 70px 0;
 }
 
 header {
@@ -58,7 +64,7 @@ nav {
     background: #ffffff;
     margin: auto;
     margin-top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
     padding: 25px;
     border: solid #dddddd 1px;
 }
@@ -79,8 +85,7 @@ hr {
     border: solid #cccccc 1px;
 }
 
-/* currently footer css fix footer to bottom of browser. need it to stick to bottom of page...
-remember to change .content margin-bottom when fixed */
+/* didn't use the css-tricks sticky footer solutions as they somehow all increase .content box size? */
 footer {
     width: 100%;
     background:#666666;
@@ -89,9 +94,8 @@ footer {
     font-size: 10px;
     padding: 20px 0px 5px 0px;
     border-top: solid #4aaaa5 8px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    left: 0;
 }
 
 /* styles affecting index.html */
@@ -103,9 +107,14 @@ footer {
 }
 
 /* styles affecting portfolio.html */
+
+/* there seems to be an issue with the vertical spacing on bottom of elements. It is wider than it should be.
+current fix below fixed spacing between .projects but not between .projects and .content. */
+
 .projects {
     float: left;
     margin-right: 30px;
+    margin-bottom: -10px; /* this seems to fix verticle spacing between .projects. but WHY?*/
     position: relative;
 }
 
@@ -124,7 +133,8 @@ footer {
     bottom: 50px;
 }
 
-/*If using following hover code. it displaces floats. Cannot fix.*/
+/*If using following hover code. it displaces floats positioning when hover. Cannot figure out fix.*/
+//
 .projects:hover .port-title {
     background: #4aaaa599;
     position: absolute;
