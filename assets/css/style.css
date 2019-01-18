@@ -85,7 +85,7 @@ hr {
     border: solid #cccccc 1px;
 }
 
-/* didn't use the css-tricks sticky footer solutions as they somehow all increase .content box size? */
+/* didn't use the css-tricks sticky footer solutions. hope this is ok.*/
 footer {
     width: 100%;
     background:#666666;
@@ -129,7 +129,7 @@ footer {
     bottom: 50px;
 }
 
-/*Cannot figure out fix how to do this hover.*/
+/*Cannot figure out how to do this hover properly currently taken out with //.*/
 //
 .projects:hover .port-title {
     background: #4aaaa599;
@@ -175,4 +175,3 @@ input[type=submit], input[value=submit] {
     background: #4aaaa5;
     border: none;
 }
-
