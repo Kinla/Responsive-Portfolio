@@ -107,21 +107,17 @@ footer {
 }
 
 /* styles affecting portfolio.html */
-
-/* there seems to be an issue with the vertical spacing on bottom of elements. It is wider than it should be.
-current fix below fixed spacing between .projects but not between .projects and .content. */
-
+/* somehow the bottom of page the margin is off? */
 .projects {
-    float: left;
     margin-right: 30px;
-    margin-bottom: -10px; /* this seems to fix verticle spacing between .projects. but WHY?*/
-    position: relative;
+    display: inline-block;
 }
 
 .port-img {
     width: 300px;
     height: 200px;
 }
+
 .port-title {
     color: #ffffff;
     background: #4aaaa5;
@@ -133,14 +129,10 @@ current fix below fixed spacing between .projects but not between .projects and 
     bottom: 50px;
 }
 
-/*If using following hover code. it displaces floats positioning when hover. Cannot figure out fix.*/
+/*Cannot figure out fix how to do this hover.*/
 //
 .projects:hover .port-title {
     background: #4aaaa599;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
     line-height: 200px;
     width: 300px;
     height: 200px;
