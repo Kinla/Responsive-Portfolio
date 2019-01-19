@@ -106,11 +106,13 @@ footer {
 }
 
 /* styles affecting portfolio.html */
-/* somehow the bottom of page the margin is off? */
+/* curse margins between rows of blocks. is there a better way to fix this instead of -margins??? */
 .projects {
-    margin-right: 30px;
-    display: inline-block;
+    margin-right: 25px;
+    float: left;
     text-decoration: none;
+    margin-bottom: -14px;
+    z-index: 0;
 }
 
 .port-img {
@@ -129,8 +131,11 @@ footer {
     bottom: 50px;
 }
 
-/*Cannot figure out how to do this hover properly currently taken out with //.*/
-//
+a:last-of-type {
+    margin-bottom: -39px;
+}
+
+/*This gives the look I want, but there has got to be a better way?*/
 .projects:hover .port-title {
     background: #4aaaa599;
     line-height: 200px;
@@ -138,6 +143,11 @@ footer {
     height: 200px;
     font-weight: bold;
     font-size: 20px;
+    position: relative;
+    bottom: 202.5px;
+    z-index: 100;
+    padding: 0;
+    margin-bottom: -164px;
 }
 
 /* styles affecting contact.hmtl */
