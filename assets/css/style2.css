@@ -97,18 +97,9 @@ footer {
     bottom: 0;
 }
 
-/* styles affecting index.html */
-#selfport {
-    max-width: 150px;
-    height: auto;
-    float: left;
-    margin-right: 20px;
-}
-
 /* styles affecting portfolio.html */
 /* somehow the bottom of page the margin is off? */
 .projects {
-    margin-right: 30px;
     display: inline-block;
     text-decoration: none;
 }
@@ -130,7 +121,7 @@ footer {
 }
 
 /*Cannot figure out how to do this hover properly currently taken out with //.*/
-//
+
 .projects:hover .port-title {
     background: #4aaaa599;
     line-height: 200px;
@@ -138,56 +129,4 @@ footer {
     height: 200px;
     font-weight: bold;
     font-size: 20px;
-}
-
-/* styles affecting contact.hmtl */
-
-/* tried various things to change autofill style and they do not work.
-only option is to take out the placeholders in html so the browsers do not detect need to autofill.*/
-
-input[type=text], input[type=email] {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #666666;
-    font-size: 16px;
-    width: 897px;
-    margin: 8px 0px 16px 0px;
-    padding: 5px;
-    border: solid 0.5px #cccccc;
-}
-
-textarea {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #666666;
-    font-size: 16px;
-    height: 250px;
-    width: 897px;
-    margin: 8px 0px 16px 0px;
-    padding: 5px;
-    border: solid 0.5px #cccccc;
-    overflow: auto;
-}
-
-input::placeholder {
-    color: #ebe5d9;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-textarea::placeholder {
-    color: #ebe5d9;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-textarea:focus, input[type=text]:focus {
-    outline-color: #4aaaa5;
-}
-
-input[type=submit], input[value=submit] {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 16px;
-    padding: 8px 25px 8px 25px;
-    color: white;
-    background: #4aaaa5;
-    border: none;
 }
