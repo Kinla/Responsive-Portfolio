@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sharon's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -9,21 +10,22 @@
     <body>
         <!--For Header-->
         <header>
-                <section class="header">
-                <h1><span id="logo">Sharon Chien</span></h1>
-                <nav>
-                    <a class="menu" href="index.html">About</a>
-                    <a class="menu" href="portfolio.html">Portfolio</a>
-                    <a class="menu" href="contact.html">Contact</a>
-                </nav>
-                </section>    
-            </header>
+            <section class="header-w">
+            <h1 id="logo">Sharon Chien</h1>
+            <nav>
+                <a class="menu" href="index.html">About</a>
+                <a class="menu" href="portfolio.html">Portfolio</a>
+                <a class="menu" href="contact.html">Contact</a>
+            </nav>
+            </section>    
+        </header>
 
         <!--For Portfolio-->
         <section class="content clearfix" id="content_port">
                 <h1 class="heading">Portfolio</h1>
             <br><hr><br>
             <!-- currently all projects links to nowhere.-->
+            <div class="wrap">
             <a class="projects" href="#" target="_blank">
                 <img class="port-img" src="assets/images/hangman.jpg" alt="Hangman">
                 <h4 class="port-title">Hangman</h4>
@@ -44,6 +46,7 @@
                 <img class="port-img" src="assets/images/RPS.jpg" alt="Rock Paper Scissors">
                 <h4 class="port-title">Rock Paper Scisssors</h4>
             </a>
+            </div>
         </section>
 
         <!--Footer-->

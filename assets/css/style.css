@@ -10,6 +10,7 @@ body {
     color: #777777;
     font-size: 16px;
     margin: 0 0 70px 0;
+    overflow: auto;
 }
 
 header {
@@ -110,11 +111,12 @@ footer {
     text-decoration: none;
     margin-bottom: -14px;
     z-index: 0;
+    max-width: calc((100% - 52px) / 2)
 }
 
 .port-img {
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 .port-title {
@@ -122,17 +124,21 @@ footer {
     background: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     padding: 10px 0;
-    width: 300px;
+    width: 100%;
     text-align: center;
     position: relative;
     bottom: 50px;
+}
+
+.wrap {
+    margin-right: -25px;
 }
 
 a:last-of-type {
     margin-bottom: -39px;
 }
 
-/*This gives the look I want, but there has got to be a better way?*/
+/* removing the following hover for this assignment as I don't have time to figure how to make it work
 .projects:hover .port-title {
     background: #4aaaa599;
     line-height: 200px;
@@ -146,6 +152,8 @@ a:last-of-type {
     padding: 0;
     margin-bottom: -164px;
 }
+*/    
+
 
 /* styles affecting contact.hmtl */
 
@@ -201,31 +209,38 @@ input[type=submit], input[value=submit] {
 
 @media screen and (max-width: 980px) {
     .header-w {
+        max-width: 900px;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+    .content {
+        max-width: 848px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #selfport {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-w {
         max-width: 700px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .content {
         max-width: 648px;
-
+        margin-left: 25px;
+        margin-right: 25px;
     }
     #selfport {
         width: 250px;
         height: auto;
     }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .header-w {
-        max-width: 600px;
-    }
-    .content {
-        max-width: 548px;
-    }
-    #selfport {
-        width: 200px;
-        height: auto;
-    }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -271,4 +286,37 @@ input[type=submit], input[value=submit] {
         margin: auto;
         margin-bottom: 20px;
     }  
+
+    .projects {
+        margin-right: 0;
+        float: none;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .port-img {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .port-title {
+        color: #ffffff;
+        background: #4aaaa5;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .wrap {
+        margin: 0;
+    }
 }
