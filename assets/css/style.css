@@ -96,7 +96,7 @@ footer {
 
 /* styles affecting index.html */
 #selfport {
-    max-width: 300px;
+    width: 300px;
     height: auto;
     float: left;
     margin-right: 20px;
@@ -207,6 +207,11 @@ input[type=submit], input[value=submit] {
         max-width: 648px;
 
     }
+    #selfport {
+        width: 250px;
+        height: auto;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -215,8 +220,12 @@ input[type=submit], input[value=submit] {
     }
     .content {
         max-width: 548px;
-
     }
+    #selfport {
+        width: 200px;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -249,6 +258,8 @@ input[type=submit], input[value=submit] {
 
     .content {
         max-width: 588px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     
     #selfport {
@@ -259,7 +270,5 @@ input[type=submit], input[value=submit] {
         object-fit: contain;
         margin: auto;
         margin-bottom: 20px;
-    }
-    
-
+    }  
 }
